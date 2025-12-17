@@ -7,14 +7,20 @@
   <link rel="stylesheet" href="src/style.css">
   <link rel="icon" href="src/images/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 </head>
 <body class="font-[Roboto]">
   <header class="bg-[#3A2416] text-white sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#"><h1 class="text-2xl font-bold ">☕ Coffee Hub</h1> </a>
-      <nav class="hidden md:flex gap-6 text-base">
+      <a href="#"><h1 class="font-[Pacifico] text-3xl font-medium ">☕ Coffee Hub</h1> </a>
+      <nav class="font-[Inter] hidden md:flex gap-6 text-base">
         <a href="#home" class="hover:text-[#E6C29F]">Home</a>
         <a href="#about" class="hover:text-[#E6C29F]">About</a>
         <a href="#menu" class="hover:text-[#E6C29F]">Menu</a>
@@ -30,14 +36,14 @@
   <main>
     <div class="relative" id="home">
       <img src="src/images/bg-image.jpg "
-         class="w-full h-[530px] xl:h-[600px] object-cover " alt="Coffee" />
+         class="w-full h-[670px]  object-cover" alt="Coffee" />
 
       <div class="absolute inset-0 bg-black/40 flex items-center">
         <div class="max-w-7xl mx-auto px-6 text-white">
-          <h2 class="text-3xl  text-center md:text-4xl font-semibold mb-3">
-            Coffee Hub - Coffee That Feels Like Home
+          <h2 class=" font-[Poppins] text-3xl  text-center md:text-4xl font-semibold mb-3 ">
+            Coffee Hub ☕ Coffee That Feels Like Home
           </h2>
-          <p class=" text-lg mb-6 mt-6 text-center">
+          <p class="font-[Inter] text-lg mb-6 mt-6 text-center">
             Experience expertly crafted coffee made from carefully selected beans, brewed to deliver rich flavor in every sip..
           </p>
           <div class="flex gap-4 justify-center">
@@ -47,6 +53,7 @@
             <button class="border border-white px-5 py-2 rounded-md text-base hover:bg-gray-400/20">
               Book a Table
             </button>
+            
           </div>
         </div>
       </div>  
@@ -54,8 +61,8 @@
 
     <div class="mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center bg-[#7c401b]/20" id="about">
       <div>
-        <h3 class="text-3xl font-semibold mb-4">About Coffee Hub</h3>
-        <p class="text-lg  mb-4">
+        <h3 class="font-[Poppins] text-3xl font-semibold mb-4">About Coffee Hub</h3>
+        <p class="font-[Inter] text-lg  mb-4">
           Coffee Hub is a neighborhood cafe created for coffee lovers who value quality, comfort, 
           and consistency. We carefully select premium coffee beans and prepare every cup with attention 
           to detail to bring out rich flavors and smooth finishes. Our space is designed to feel warm 
@@ -63,7 +70,7 @@
           conversations with friends while experiencing coffee crafted with care and passion.
         </p>
 
-        <ul class="text-lg space-y-2 text-[#3A2416]">
+        <ul class="font-[Inter] text-lg space-y-2 text-[#3A2416]">
           <li>☕ Premium hand-picked coffee beans</li>
           <li>😊 Calm and relaxing ambience</li>
           <li>👨‍🍳 Friendly staff & quick service</li>
@@ -73,40 +80,48 @@
           Know Our Story
         </button>
       </div>
-      <img src="src/images/about-image.jpg"
-         class="rounded-lg shadow-lg" alt="">
+      <div class="overflow-hidden rounded-lg">
+        <img src="src/images/about-image.jpg"
+         class="shadow transition-transform duration-300 ease-out
+       hover:scale-[1.01]
+       hover:shadow-lg" alt="">
+      </div>
 
     </div>
 
-    <div class="py-16 bg-[#7c401b]/50" id="menu">
+    <div class="py-16 bg-[#7c401b]/50 " id="menu">
       <div class="max-w-7xl mx-auto px-6">
-        <h3 class="text-center text-3xl font-semibold mb-10">
+        <h3 class="font-[Poppins]  text-center text-3xl font-semibold mb-10">
           Popular Choices
         </h3>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="bg-pink-100 p-4 rounded-lg text-center shadow">
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 font-[Inter]">
+          <div class="bg-pink-100 p-4 rounded-lg text-center shadow
+          transition transform hover:-translate-y-1 hover:shadow-xl duration-300">
             <img src="src/images/classic espresso.jpg" class="h-28 mx-auto mb-3 rounded" />
             <h4 class="font-medium">Classic Espresso</h4>
             <p class="text-xs text-gray-700 mb-1">Bold & Intense</p>
             <span class="text-sm font-semibold">₹180</span>
           </div>
 
-          <div class="bg-pink-100 p-4 rounded-lg text-center shadow">
+          <div class="bg-pink-100 p-4 rounded-lg text-center shadow
+          transition transform hover:-translate-y-1 hover:shadow-xl duration-300">
             <img src="src/images/creamy latte.jpg" class="h-28 mx-auto mb-3 rounded" />
             <h4 class="font-medium">Creamy Latte</h4>
             <p class="text-xs text-gray-700 mb-1">Smooth & Milky</p>
             <span class="text-sm font-semibold">₹210</span>
           </div>
 
-          <div class="bg-pink-100 p-4 rounded-lg text-center shadow">
+          <div class="bg-pink-100 p-4 rounded-lg text-center shadow
+          transition transform hover:-translate-y-1 hover:shadow-xl duration-300">
             <img src="src/images/chocolate macho.jpg" class="h-28 mx-auto mb-3 rounded" />
             <h4 class="font-medium">Chocolate Macho</h4>
             <p class="text-xs text-gray-700 mb-1">Rich & Chocolatey</p>
             <span class="text-sm font-semibold">₹190</span>
           </div>
 
-          <div class="bg-pink-100 p-4 rounded-lg text-center shadow">
+          <div class="bg-pink-100 p-4 rounded-lg text-center shadow
+          transition transform hover:-translate-y-1 hover:shadow-xl duration-300">
             <img src="src/images/iced coffee.jpg" class="h-28 mx-auto mb-3 rounded" />
             <h4 class="font-medium">Iced Coffee</h4>
             <p class="text-xs text-gray-700 mb-1">Cool & Refreshing</p>
@@ -122,12 +137,17 @@
     </div>
 
     <div class=" mx-auto px-6 py-16 bg-[#7c401b]/20">
-      <h3 class="text-center text-3xl font-semibold mb-10">
+      <h3 class="font-[Poppins] text-center text-3xl font-semibold mb-10">
       What Our Customers Say
       </h3>
 
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow">
+        <div class="font-[Inter] bg-white p-6 rounded-lg shadow
+        border border-transparent
+            hover:border-[#3A2416]
+            hover:-translate-y-1
+            hover:shadow-xl
+            transition-all duration-300">
           <p class="text-lg  mb-1">
             “Absolutely love the atmosphere! The coffee tastes amazing and the
             staff are incredibly welcoming.”
@@ -136,7 +156,12 @@
           <span class="text-base font-medium text-gray-700">- Karthik M.</span>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow">
+        <div class="font-[Inter] bg-white p-6 rounded-lg shadow
+        border border-transparent
+            hover:border-[#3A2416]
+            hover:-translate-y-1
+            hover:shadow-xl
+            transition-all duration-300">
           <p class="text-lg  mb-1">
             “A perfect place to work, relax, and enjoy freshly brewed coffee.
             Highly recommended!”
@@ -148,10 +173,10 @@
     </div>
 
     <div class="bg-[#7c401b]/50 py-16" id="contact">
-      <h3 class="text-center text-3xl font-semibold mb-10">
+      <h3 class="font-[Poppins] text-center text-3xl font-semibold mb-10">
         Contact
         </h3>
-     <div class="max-w-7xl mx-auto px-6  grid  md:grid-cols-2 gap-10">
+     <div class="font-[Inter] max-w-7xl mx-auto px-6  grid  md:grid-cols-2 gap-10">
       <div class="bg-pink-100 p-6 rounded-lg shadow ">
         <h4 class="font-semibold text-xl mb-4">Visit Us</h4>
         <p class="text-lg"><i class="fa-solid fa-map-pin"></i> 24H Cross Road, Chennai-28</p>
@@ -168,17 +193,20 @@
         <a href="https://github.com/arsath-03" target="_blank" class="text-lg hover:text-gray-600"><p><i class="fa-brands fa-square-github"></i> Github</p></a>
       </div>
 
-      <img src="src/images/coffeehub.png"
-           class="rounded-lg shadow" alt="Cafe Interior">
+      <div class="overflow-hidden rounded-lg">
+        <img src="src/images/coffeehub.png"
+           class="shadow transition-transform duration-300 ease-out
+              hover:scale-[1.02]" alt="">
+      </div>
      </div>
     </div>
 
     <div class=" mx-auto px-6 py-16  bg-[#7c401b]/20" id="gallery">
-      <h3 class="text-center text-3xl font-semibold mb-10">Coffee Hub Through the Lens</h3>
+      <h3 class="font-[Poppins] text-center text-3xl font-semibold mb-10">Coffee Hub Through the Lens</h3>
       <div class="grid  md:grid-cols-3 gap-4">
-        <img class="rounded-lg" src="src/images/gallery1.jpg">
-        <img class="rounded-lg" src="src/images/gallery2.jpg">
-        <img class="rounded-lg" src="src/images/gallery3.jpg">
+        <img class="rounded-lg transition duration-300 hover:scale-[1.01] cursor-pointer" src="src/images/gallery1.jpg">
+        <img class="rounded-lg transition duration-300 hover:scale-[1.01] cursor-pointer" src="src/images/gallery2.jpg">
+        <img class="rounded-lg transition duration-300 hover:scale-[1.01] cursor-pointer" src="src/images/gallery3.jpg">
         
       </div>
     </div>
@@ -186,7 +214,7 @@
   </main>
 
   <footer class="bg-[#3A2416] text-white py-8 ">
-    <div class=" mx-auto px-10 mb-2 grid grid-cols-2 md:grid-cols-4 gap-6 text-base">
+    <div class="font-[Inter] mx-auto px-10 mb-2 grid grid-cols-2 md:grid-cols-4 gap-6 text-base">
       <div>
         <h4 class="font-semibold mb-2">Coffee Hub</h4>
         <p>Made for Coffee Lovers.</p>
