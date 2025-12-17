@@ -8,20 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
-  <link rel="stylesheet" crossorigin href="/CoffeeHub-cyberdude/assets/index-D19V0Gc4.css">
+  <link rel="stylesheet" crossorigin href="/CoffeeHub-cyberdude/assets/index-CEW4FdT1.css">
 </head>
 <body class="font-[Roboto]">
   <header class="bg-[#3A2416] text-white">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold ">☕ Coffee Hub</h1> 
-      <nav class="hidden md:flex gap-6 text-md">
+      <a href="#"><h1 class="text-2xl font-bold ">☕ Coffee Hub</h1> </a>
+      <nav class="hidden md:flex gap-6 text-base">
         <a href="#home" class="hover:text-[#E6C29F]">Home</a>
         <a href="#about" class="hover:text-[#E6C29F]">About</a>
         <a href="#menu" class="hover:text-[#E6C29F]">Menu</a>
         <a href="#contact" class="hover:text-[#E6C29F]">Contact</a>
         <a href="#gallery" class="hover:text-[#E6C29F]">Gallery</a>
       </nav>
-      <button class="bg-[#eca965] text-[#3A2416] px-4 py-2 rounded-md text-sm font-medium hover:bg-[#dd9365] cursor-pointer">
+      <button class="bg-[#eca965] text-[#3A2416] px-4 py-2 rounded-md text-base font-medium hover:bg-[#dd9365] cursor-pointer">
         <i class="fa-solid fa-location-dot"></i> Visit Us
       </button>
     </div>
@@ -30,21 +30,21 @@
   <main>
     <div class="relative" id="home">
       <img src="src/images/bg-image.jpg "
-         class="w-full h-[500px] object-cover " alt="Coffee" />
+         class="w-full h-[530px] xl:h-[600px] object-cover " alt="Coffee" />
 
       <div class="absolute inset-0 bg-black/40 flex items-center">
         <div class="max-w-7xl mx-auto px-6 text-white">
           <h2 class="text-3xl  text-center md:text-4xl font-semibold mb-3">
             Coffee Hub - Coffee That Feels Like Home
           </h2>
-          <p class=" text-md mb-6 mt-6 text-center">
+          <p class=" text-lg mb-6 mt-6 text-center">
             Experience expertly crafted coffee made from carefully selected beans, brewed to deliver rich flavor in every sip..
           </p>
           <div class="flex gap-4 justify-center">
-            <button class="bg-[#eca965] text-[#3A2416] px-5 py-2 rounded-md text-sm hover:bg-[#dd9365]">
+            <button class="bg-[#eca965] text-[#3A2416] px-5 py-2 rounded-md text-base hover:bg-[#dd9365]">
               <i class="fa-solid fa-mug-hot"></i> Order Coffee
             </button>
-            <button class="border border-white px-5 py-2 rounded-md text-sm hover:bg-gray-400/20">
+            <button class="border border-white px-5 py-2 rounded-md text-base hover:bg-gray-400/20">
               Book a Table
             </button>
           </div>
@@ -55,7 +55,7 @@
     <div class="mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center bg-[#7c401b]/20" id="about">
       <div>
         <h3 class="text-3xl font-semibold mb-4">About Coffee Hub</h3>
-        <p class="text-md  mb-4">
+        <p class="text-lg  mb-4">
           Coffee Hub is a neighborhood cafe created for coffee lovers who value quality, comfort, 
           and consistency. We carefully select premium coffee beans and prepare every cup with attention 
           to detail to bring out rich flavors and smooth finishes. Our space is designed to feel warm 
@@ -63,13 +63,13 @@
           conversations with friends while experiencing coffee crafted with care and passion.
         </p>
 
-        <ul class="text-md space-y-2 text-[#3A2416]">
+        <ul class="text-lg space-y-2 text-[#3A2416]">
           <li>☕ Premium hand-picked coffee beans</li>
           <li>😊 Calm and relaxing ambience</li>
           <li>👨‍🍳 Friendly staff & quick service</li>
         </ul>
 
-        <button class="mt-6 bg-[#3A2416] text-white px-5 py-2 rounded-md text-sm hover:bg-[#75492d]">
+        <button class="mt-6 bg-[#3A2416] text-white px-5 py-2 rounded-md text-base hover:bg-[#75492d]">
           Know Our Story
         </button>
       </div>
@@ -114,7 +114,7 @@
           </div>
         </div>
         <div class="grid justify-center">
-          <button class="mt-6 bg-[#3A2416] text-white px-5 py-2 rounded-md text-sm hover:bg-[#75492d] ">
+          <button class="mt-6 bg-[#3A2416] text-white px-5 py-2 rounded-md text-base hover:bg-[#75492d] ">
           View Full Menu
         </button>
         </div>
@@ -128,19 +128,21 @@
 
       <div class="grid md:grid-cols-2 gap-6">
         <div class="bg-white p-6 rounded-lg shadow">
-          <p class="text-md  mb-4">
+          <p class="text-lg  mb-1">
             “Absolutely love the atmosphere! The coffee tastes amazing and the
             staff are incredibly welcoming.”
           </p>
-          <span class="text-sm font-medium text-gray-700">- Karthik M.</span>
+          <p class="mb-3 text-yellow-600"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+          <span class="text-base font-medium text-gray-700">- Karthik M.</span>
         </div>
 
         <div class="bg-white p-6 rounded-lg shadow">
-          <p class="text-md  mb-4">
+          <p class="text-lg  mb-1">
             “A perfect place to work, relax, and enjoy freshly brewed coffee.
             Highly recommended!”
           </p>
-          <span class="text-sm font-medium text-gray-700">- Ananya R.</span>
+          <p class="mb-3 text-yellow-600"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+          <span class="text-base font-medium text-gray-700">- Ananya R.</span>
         </div>
       </div>
     </div>
@@ -152,18 +154,18 @@
      <div class="max-w-7xl mx-auto px-6  grid  md:grid-cols-2 gap-10">
       <div class="bg-pink-100 p-6 rounded-lg shadow ">
         <h4 class="font-semibold text-xl mb-4">Visit Us</h4>
-        <p class="text-md"><i class="fa-solid fa-map-pin"></i> 24H Cross Road, Chennai-28</p>
-        <p class="text-md"><i class="fa-solid fa-phone"></i> +91 7010160220</p>
-        <p class="text-md"><i class="fa-solid fa-envelope"></i> hello@coffeehub.in</p>
+        <p class="text-lg"><i class="fa-solid fa-map-pin"></i> 24H Cross Road, Chennai-28</p>
+        <p class="text-lg"><i class="fa-solid fa-phone"></i> +91 7010160220</p>
+        <p class="text-lg"><i class="fa-solid fa-envelope"></i> hello@coffeehub.in</p>
 
         <h4 class="font-semibold text-xl mt-6 mb-2">Opening Hours</h4>
-        <p class="text-md">Mon - Fri: 8:00 AM - 10:00 PM</p>
-        <p class="text-md">Sat - Sun: 9:00 AM - 11:00 PM</p>
+        <p class="text-lg">Mon - Fri: 8:00 AM - 10:00 PM</p>
+        <p class="text-lg">Sat - Sun: 9:00 AM - 11:00 PM</p>
 
         <h4 class="font-semibold text-xl mt-6 mb-2">Social Links</h4>
-        <a href="https://www.instagram.com/__arsath_03__/" target="_blank" class="hover:text-gray-600"><p><i class="fa-brands fa-square-instagram"></i> Instagram</p></a>
-        <a href="https://www.facebook.com/" target="_blank" class="hover:text-gray-600"><p><i class="fa-brands fa-square-facebook"></i> Facebook</p></a>
-        <a href="https://github.com/arsath-03" target="_blank" class="hover:text-gray-600"><p><i class="fa-brands fa-square-github"></i> Github</p></a>
+        <a href="https://www.instagram.com/__arsath_03__/" target="_blank" class=" text-lg hover:text-gray-600 " ><p><i class="fa-brands fa-square-instagram"></i> Instagram</p></a>
+        <a href="https://www.facebook.com/" target="_blank" class="text-lg hover:text-gray-600"><p><i class="fa-brands fa-square-facebook"></i> Facebook</p></a>
+        <a href="https://github.com/arsath-03" target="_blank" class="text-lg hover:text-gray-600"><p><i class="fa-brands fa-square-github"></i> Github</p></a>
       </div>
 
       <img src="/CoffeeHub-cyberdude/assets/coffeehub-BJddTBTV.png"
@@ -184,7 +186,7 @@
   </main>
 
   <footer class="bg-[#3A2416] text-white py-8 ">
-    <div class=" mx-auto px-10 mb-2 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+    <div class=" mx-auto px-10 mb-2 grid grid-cols-2 md:grid-cols-4 gap-6 text-base">
       <div>
         <h4 class="font-semibold mb-2">Coffee Hub</h4>
         <p>Made for Coffee Lovers.</p>
